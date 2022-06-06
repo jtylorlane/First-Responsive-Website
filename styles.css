@@ -1,0 +1,81 @@
+main {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 300px;
+    justify-content: center;
+    background-color: darkcyan;
+   
+
+}
+
+section {
+    padding: 20px;
+    min-height: 100px;
+    text-align: center;
+}
+
+h1 {
+    
+    font-size: 40px;
+    text-align: center;
+
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 28px;
+
+}
+
+p {
+
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.barcode-one, .barcode-two, .barcode-three {
+    margin: 0 auto;
+    height: 30px;
+    width: 200px;
+}
+
+.barcode-one { background-color: aqua; }
+.barcode-two { background-color: orange; }
+.barcode-three { background-color: cornflowerblue; }
+
+main { grid-area: main;}
+.One {grid-area: one;}
+.Two {grid-area: two;}
+.Three {grid-area: three;}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    "main"
+    "one"
+    "two"
+    "three";
+}
+
+@media (min-width: 576px)
+{
+/* medium sized device rules
+display: grid; */
+}
+
+@media (min-width: 992px) 
+{
+    .container {
+        display: grid;
+        grid-template-areas:
+        "main main main"
+        "one two three";
+
+    }
+
+
+}
+
+
