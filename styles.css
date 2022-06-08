@@ -5,9 +5,11 @@ main {
     height: 300px;
     justify-content: center;
     background-color: darkcyan;
+    color: white;
    
 
 }
+
 
 section {
     padding: 20px;
@@ -19,6 +21,7 @@ h1 {
     
     font-size: 40px;
     text-align: center;
+    color: white;
 
 }
 
@@ -45,7 +48,8 @@ p {
 .barcode-two { background-color: orange; }
 .barcode-three { background-color: cornflowerblue; }
 
-main { grid-area: main;}
+main { grid-area: main;
+background-color: darkcyan;}
 .One {grid-area: one;}
 .Two {grid-area: two;}
 .Three {grid-area: three;}
@@ -59,14 +63,24 @@ main { grid-area: main;}
     "three";
 }
 
+
 @media (min-width: 576px)
 {
-/* medium sized device rules
-display: grid; */
+    
+
+
 }
 
 @media (min-width: 992px) 
 {
+    body{
+        background-color: black
+
+        }
+        h2, p {
+            color: white;
+        }
+    };
     .container {
         display: grid;
         grid-template-areas:
